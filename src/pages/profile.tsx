@@ -6,7 +6,7 @@ import Footer from "@/components/footer/footer"
 export default function Profile(){
     return(
     <div>
-            {/* <Header/> */}
+            <Header/>
             <Perfil/>
             <MyHistory/>
             <Experiences/>
