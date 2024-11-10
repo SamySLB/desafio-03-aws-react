@@ -1,35 +1,100 @@
-.Pencil{
-  margin-top:850px;
-  width: 105px;
-  height: 105px;
-  gap: 0px;
-  opacity: 0px;
-  
-}
-
-.container{
-      margin-top:180px;
-    width: 1,240px;
-  height: 400px;
-  display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 20px;
-}
-.userInfo{
-  width:1,240px;
-  height:400px;
-  display: flex; 
-  align-items: center; 
-  gap: 20px; 
-}
-.avatar{
-  width: 256px;
-  height: 256px;
+.Pencil {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-opacity: 0px;
-border-color:#172A3A ;
-background-color: #09BC8A;
-;
+  color: #fff;
+  background-color: #508991;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  cursor: pointer;
+}
 
+.container {
+  width: 100%;
+  max-width: 1366px; 
+  height: auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px; 
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+}
+
+.Name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; 
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+}
+
+.userInfo {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 1366px; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user {
+  margin-top: 16px;
+}
+
+.avatar {
+  margin-top: 35px; 
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+  opacity: 1; 
+  border-color: #172A3A;
+  box-shadow: 4px 10px #172A3A;
+  background-color: #09BC8A;
+}
+
+.content {
+  margin-top: 16px;
+  margin-left: 20px; 
+  margin-right: 20px; 
+}
+
+.font {
+  color: #09BC8A;
+  font-size: 32px; 
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+}
+
+.authButton {
+  width: 202px;
+  height: 50px; 
+  border-radius: 16px;
+  color: #fff;
+  background-color: #172A3A;
+  box-shadow: 4px 10px #09BC8A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; 
+  font-weight: 700;
+  line-height: 37.5px;
+  text-align: center;
+  margin-top: 20px; 
+  cursor: pointer;
+}
+
+.authButton:hover {
+  background-color: #09BC8A;
+  box-shadow: 4px 10px #172A3A;
 }
