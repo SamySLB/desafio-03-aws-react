@@ -1,6 +1,6 @@
 .Pencil {
-  width: 80px;
-  height: 80px;
+  width: 104px;
+  height: 104px;
   border-radius: 50%;
   color: #fff;
   background-color: #508991;
@@ -8,93 +8,86 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 20px;
+  right: 20px; 
   top: 120px;
   cursor: pointer;
 }
 
-.container {
-  width: 100%;
-  max-width: 1366px; 
-  height: auto;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px; 
-  font-weight: 700;
-  line-height: 32px;
-  text-align: center;
-  text-decoration-skip-ink: none;
+.container{
+      width: 1,240px;
+    height: 400px;
+    margin-bottom:128px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+
+
 }
 
-.Name {
+.Name{
   font-family: 'Roboto', sans-serif;
-  font-size: 18px; 
+  font-size: 25px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 28px;
   text-align: center;
   text-decoration-skip-ink: none;
+  
 }
-
-.userInfo {
-  margin-top: 18px;
-  width: 100%;
-  max-width: 1366px; 
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: center;
+.userInfo{
+    margin-top:18px;
+  width:1,240px;
+  height:400px;
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
 }
-
-.user {
+.user{
   margin-top: 16px;
 }
-
-.avatar {
-  margin-top: 35px; 
-  width: 200px; 
-  height: 200px;
+.avatar{
+  margin-top: 200px;
+  width: 256px;
+  height: 256px;
   border-radius: 50%;
-  opacity: 1; 
-  border-color: #172A3A;
-  box-shadow: 4px 10px #172A3A;
-  background-color: #09BC8A;
-}
+opacity: 0px;
+border-color:#172A3A ;
+box-shadow:4px 10px #172A3A; 
+background-color: #09BC8A;
+;
 
-.content {
+}
+.content{
   margin-top: 16px;
-  margin-left: 20px; 
-  margin-right: 20px; 
+  margin-left: 34px;
+  margin-right: 100px;
 }
-
-.font {
-  color: #09BC8A;
-  font-size: 32px; 
-  font-weight: 800;
-  line-height: 40px;
-  text-align: center;
+.font{
+  color:#09BC8A;
+font-size: 64px;
+font-weight: 800;
+line-height: 40px;
+text-align: center;
 }
-
 .authButton {
   width: 202px;
-  height: 50px; 
+  height: 70px;
+  top: 306.5px;
+  left: 740px;
   border-radius: 16px;
   color: #fff;
   background-color: #172A3A;
-  box-shadow: 4px 10px #09BC8A;
+  box-shadow:4px 10px #09BC8A; 
+  margin-right: 12px;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px; 
+  font-size: 32px;
   font-weight: 700;
   line-height: 37.5px;
   text-align: center;
-  margin-top: 20px; 
-  cursor: pointer;
-}
-
-.authButton:hover {
-  background-color: #09BC8A;
-  box-shadow: 4px 10px #172A3A;
 }

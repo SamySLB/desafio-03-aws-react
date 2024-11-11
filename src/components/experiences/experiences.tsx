@@ -139,7 +139,7 @@ export default function Experiences() {
       ) : (
         <div className={styles['card-container']}>
           {experiences.length === 0 ? (
-            <p>Não há nada por aqui.</p>
+            <p className={styles.Name}>Não há nada por aqui.</p>
           ) : (
             experiences.map((exp, index) => (
               <div key={index} className={styles.Card}>
