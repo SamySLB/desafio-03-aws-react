@@ -17,16 +17,20 @@ export default function Footer() {
       if (user) {
         const storedEmail = localStorage.getItem("email") || user.email || "";
         setEmail(storedEmail);
+      } else {
+        // Verifica se há email no localStorage para usuários deslogados
+        const storedEmail = localStorage.getItem("email") || "";
+        setEmail(storedEmail);
       }
     });
     return () => unsubscribe();
   }, []);
 
   useEffect(() => {
-    if (isLoggedIn && email) {
+    if (email) {
       localStorage.setItem("email", email);
     }
-  }, [email, isLoggedIn]);
+  }, [email]);
 
   const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     const newEmail = e.target.value;
@@ -35,7 +39,7 @@ export default function Footer() {
 
   return (
     <div className={styles.footer}>
-      {isLoggedIn ? (
+      {isLoggedIn || email ? (
         <>
           <p>Sinta-se livre para me contatar a qualquer momento!</p>
           <input
@@ -45,23 +49,23 @@ export default function Footer() {
             onChange={handleEmailChange}
           />
         </>
-      ) : ( ''
+      ) : (
+        ''
       )}
       <div className={styles.headerIcon}>
-       <p>Assim que possível, me envie um email para que possamos trabalhar felizes juntos!</p>
-      <div className={styles.Body}>
-        <div className={styles.bodyIcon}><FaInstagramSquare className={styles.Icon} /></div>
-        <div className={styles.bodyIcon}><ImFacebook2 className={styles.Icon} /></div>
-        <div className={styles.bodyIcon}><FaTwitterSquare className={styles.Icon} /></div>
-        <div className={styles.bodyIcon}><FaSquareYoutube className={styles.Icon} /></div>
+        <p>Assim que possível, me envie um email para que possamos trabalhar felizes juntos!</p>
+        <div className={styles.Body}>
+          <div className={styles.bodyIcon}><FaInstagramSquare className={styles.Icon} /></div>
+          <div className={styles.bodyIcon}><ImFacebook2 className={styles.Icon} /></div>
+          <div className={styles.bodyIcon}><FaTwitterSquare className={styles.Icon} /></div>
+          <div className={styles.bodyIcon}><FaSquareYoutube className={styles.Icon} /></div>
+        </div>
       </div>
-      
       <div className={styles.end}>
         <IoIosPin />
         <p>Brasil</p>
         <p>© 2024, All Rights By Compass UOL</p>
       </div>
-    </div>
     </div>
   );
 }
