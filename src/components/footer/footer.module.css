@@ -60,7 +60,6 @@
   }
   
   .end {
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +69,8 @@
     font-weight: 500;
     line-height: 29.3px;
     text-align: left;
+    background-color: #FFFF;
+    color:#172A3A;
 
 
   }
